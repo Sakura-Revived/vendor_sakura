@@ -17,8 +17,3 @@
 <permissions>
     <feature name="android.sofware.nfc.beam" />
 </permissions>
-<config>
-    <allow-in-power-save package="com.android.deskclock" />
-    <allow-in-power-save package="com.android.messaging" />
-    <allow-in-power-save package="com.google.android.gms"/>
-</config>
