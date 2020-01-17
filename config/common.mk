@@ -184,6 +184,7 @@ PRODUCT_COPY_FILES += \
 # Settings
 PRODUCT_PACKAGES += \
     SystemPitchBlackOverlay \
+    SystemUIPitchBlackOverlay \
     SystemDarkGrayOverlay \
     SystemUIDarkGrayOverlay \
     SystemStyleOverlay \
