@@ -118,6 +118,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # AOSP packages
 PRODUCT_PACKAGES += \
+    Email \
     ExactCalculator
 
 # Extra packages
