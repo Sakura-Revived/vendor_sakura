@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     Profiles \
     TrebuchetQuickStep \
+    Lawnchair \
     Updater \
     AudioFX \
     WeatherProvider
@@ -233,19 +234,12 @@ DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
 PRODUCT_VERSION_MAJOR = 1
 PRODUCT_VERSION_MINOR = Q
+SAKURA_BUILD_ZIP_TYPE := VANILLA
 
 #Gapps
 ifeq ($(SAKURA_GAPPS), true)
     $(call inherit-product, vendor/gapps/config.mk)
     SAKURA_BUILD_ZIP_TYPE := GAPPS
-    PRODUCT_PACKAGES += \
-              Lawnchair
-endif
-
-ifeq ($(SAKURA_GAPPS),false)
-    SAKURA_BUILD_ZIP_TYPE := VANILLA
-    PRODUCT_PACKAGES += \
-              Launcher3
 endif
 
 # Face Unlock
