@@ -40,14 +40,6 @@ LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := fonts_customization.xml
-LOCAL_SRC_FILES := etc/fonts_customization.xml
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := ETC
-LOCAL_PRODUCT_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE        := Longshot
 LOCAL_SRC_FILES     := app/Longshot.apk
 LOCAL_MODULE_TAGS   := optional
@@ -79,4 +71,12 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_DEX_PREOPT := false
 LOCAL_REPLACE_PREBUILT_APK_INSTALLED := $(LOCAL_PATH)/$(LOCAL_SRC_FILES)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := fonts_customization.xml
+LOCAL_SRC_FILES := etc/fonts_customization.xml
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
