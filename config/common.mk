@@ -135,7 +135,6 @@ PRODUCT_PACKAGES += \
     TrebuchetQuickStep \
     Lawnchair \
     OPScreenRecorder \
-    Updater \
     AudioFX \
     WeatherProvider
 
@@ -249,6 +248,8 @@ endif
 #Offcial tag
 ifeq ($(SAKURA_OFFICIAL), true)
     SAKURA_BUILD := OFFICIAL
+    PRODUCT_PACKAGES += \
+    Updater
 endif
 
 # Increase sakura Version with each major release.
