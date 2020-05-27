@@ -129,6 +129,7 @@ PRODUCT_PACKAGES += \
     LineageSetupWizard \
     Eleven \
     Jelly \
+    Etar \
     OmniStyle \
     LockClock \
     Profiles \
