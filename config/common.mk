@@ -184,6 +184,22 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
+# Customizations
+PRODUCT_PACKAGES += \
+    LineageNavigationBarNoHint
+
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
+# Custom off-mode charger
+ifeq ($(WITH_LINEAGE_CHARGER),true)
+PRODUCT_PACKAGES += \
+    lineage_charger_res_images \
+    font_log.png \
+    libhealthd.lineage
+endif
+
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.exfat \
