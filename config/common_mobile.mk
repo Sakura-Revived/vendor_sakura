@@ -24,6 +24,15 @@ PRODUCT_PACKAGES += \
     AudioFX
 endif
 
+# GVM
+PRODUCT_PACKAGES += \
+    GVM-SBH-L \
+    GVM-SBH-M \
+    GVM-SBH-XL \
+    GVM-URM-M \
+    GVM-URM-L \
+    GVM-URM-R
+
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
     TrebuchetQuickStepGo
