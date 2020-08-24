@@ -328,6 +328,12 @@ endif
 PRODUCT_COPY_FILES +=  \
     vendor/lineage/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
+# Notch city
+PRODUCT_PACKAGES += \
+    HideCutout \
+    StatusBarStock \
+    StatusBarStockSysUI
+
 # Include Sakura's theme files
 include vendor/lineage/themes/backgrounds/themes.mk
 
