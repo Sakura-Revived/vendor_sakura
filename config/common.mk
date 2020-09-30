@@ -110,8 +110,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
-    LineageSetupWizard \
-    Updater
+    LineageSetupWizard
 
 # Themes
 PRODUCT_PACKAGES += \
@@ -190,11 +189,13 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
 
 PRODUCT_VERSION_MAJOR = 3
 PRODUCT_VERSION_MINOR = R
-SAKURA_BUILD := ALPHA
+SAKURA_BUILD := UNOFFICIAL-ALPHA
 
 #Official and unofficial for the sake of the world
 ifeq ($(SAKURA_OFFICIAL), true)
-    SAKURA_BUILD := OFFICIAL
+    SAKURA_BUILD := OFFICIAL-ALPHA
+    PRODUCT_PACKAGES += \
+    Updater
 endif
 
 #Gapps
