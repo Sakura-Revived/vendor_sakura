@@ -17,6 +17,7 @@ PRODUCT_PACKAGES += \
     Jelly \
     Profiles \
     Seedvault \
+    SakuraWidget \
     OmniStyle
 
 ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
