@@ -19,6 +19,8 @@ PRODUCT_PACKAGES += \
     Profiles \
     Seedvault \
     SakuraWidget \
+    StitchImage \
+    StitchImageService \
     OmniStyle
 
 ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
