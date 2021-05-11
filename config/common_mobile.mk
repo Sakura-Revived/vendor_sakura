@@ -14,15 +14,16 @@ PRODUCT_PACKAGES += \
 # Lineage packages
 PRODUCT_PACKAGES += \
     Backgrounds \
+    Custom-Fonts \
     Eleven \
     Jelly \
+    OmniJaws \
+    OmniStyle \
     Profiles \
     Seedvault \
     SakuraWidget \
     StitchImage \
-    StitchImageService \
-    OmniJaws \
-    OmniStyle
+    StitchImageService
 
 ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
 PRODUCT_PACKAGES += \
