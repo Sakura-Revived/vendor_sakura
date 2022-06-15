@@ -268,6 +268,7 @@ endif
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
     SystemUI
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
