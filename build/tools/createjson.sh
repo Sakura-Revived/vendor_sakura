@@ -15,7 +15,7 @@ echo -e ${ylw}"* ┃┃╱╱┃┃┃╰╯┃┃┃━┫╰━┫╰╮┃╰
 echo -e ${ylw}"* ╰╯╱╱╰╯╰━━┫┣━━┻━━┻━╯╰━━━┻╯╰┻╯╰┻━━┻╯╰╯╰╯                                  "
 echo -e ${ylw}"* ╱╱╱╱╱╱╱╱╭╯┃                                                             "
 echo -e ${ylw}"* ╱╱╱╱╱╱╱╱╰━╯                                                             "
-echo -e ${cya}"* THANK YOU FOR BUILDING PROJECT SAKURA                                   "
+echo -e ${cya}"* THANK YOU FOR BUILDING PROJECT SAKURA REVIVED                           "
 echo -e ${blu}"=========================================================================="
 echo -e ${cya}"You can use the below generated json to push OTA."
 echo " "
@@ -23,10 +23,10 @@ echo "{"
 echo '"response": ['
 echo "{"
 echo ' "datetime":' "\"$(grep ro\.build\.date\.utc $OUT/system/build.prop | cut -d= -f2)\","
-echo ' "filename":' "\"$(basename $(ls $OUT/ProjectSakura*.zip))\","
-echo ' "id":' "\"$((cat $OUT/ProjectSakura*.zip.md5sum) | cut -d ' ' -f1)\","
+echo ' "filename":' "\"$(basename $(ls $OUT/SakuraRevived*.zip))\","
+echo ' "id":' "\"$((cat $OUT/SakuraRevived*.zip.md5sum) | cut -d ' ' -f1)\","
 echo ' "romtype":'"\"nightly\","
-echo ' "size":' "$(stat -c%s $OUT/ProjectSakura*.zip)",
+echo ' "size":' "$(stat -c%s $OUT/SakuraRevived*.zip)",
 echo ' "url":' "\"https://master.dl.sourceforge.net/project/projectsakura/$LINEAGE_BUILD/$(basename $(ls $OUT/ProjectSakura*.zip))\","
 echo ' "version":' "\"2.Q\""
 echo "}"
