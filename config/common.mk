@@ -296,12 +296,8 @@ ifeq ($(SAKURA_GAPPS), true)
     IS_PHONE := true
 endif
 
-#Offcial tag
-ifeq ($(SAKURA_OFFICIAL), true)
-    SAKURA_BUILD := OFFICIAL
-    PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     Updater
-endif
 
 # Increase sakura Version with each major release.
 LINEAGE_VERSION := SakuraRevived-$(SAKURA_BUILD_ZIP_TYPE)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d-%H%M)-$(LINEAGE_BUILD)-$(SAKURA_BUILD)
